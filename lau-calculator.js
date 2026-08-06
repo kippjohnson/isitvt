@@ -93,7 +93,12 @@
 
       breakdown.replaceChildren();
       const priorItem = document.createElement("li");
-      priorItem.innerHTML = "<span>Published pre-test odds</span><b>4</b>";
+      const priorLabel = calculator.dataset.lauPriorLabel ?? "Published pre-test odds";
+      const priorText = document.createElement("span");
+      const priorValue = document.createElement("b");
+      priorText.textContent = priorLabel;
+      priorValue.textContent = "4";
+      priorItem.append(priorText, priorValue);
       breakdown.append(priorItem);
 
       selectedFeatures.forEach((input) => {
