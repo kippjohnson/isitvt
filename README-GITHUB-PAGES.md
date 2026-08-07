@@ -1,4 +1,4 @@
-# Publish IS IT VT? with GitHub Pages
+# Publish IsItVT.com with GitHub Pages
 
 This folder is the complete static website. It does not need Node, npm, a database, or a GitHub Actions build. Publish the files in this folder at the root of a GitHub repository.
 
